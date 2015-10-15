@@ -9,48 +9,44 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button myButton;
+    private Spinner spinnerColor;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        myButton=(Button)findViewById(R.id.button);
+        spinnerColor=(Spinner) findViewById(R.id.color_spinner);
 
-        LinearLayout linearLayout= new LinearLayout(this);
-        linearLayout.setOrientation(LinearLayout.VERTICAL);
+        //Implement by Interface definition
+        myButton.setOnClickListener(this);
 
-        myButton= new Button(this);
-        myButton.setText("Press!");
-
-        LinearLayout.LayoutParams layoutParams=
-                new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-
-        myButton.setLayoutParams(layoutParams);
-
+        //Implement by anonymous class
+        myButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                finish();
+            }
+        });
+        //Implement by intern class
         myButton.setOnClickListener(event);
-        linearLayout.addView(myButton);
-
-        LinearLayout.LayoutParams layoutParamsLinear=
-                new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-
-        linearLayout.setLayoutParams(layoutParamsLinear);
-
-        setContentView(linearLayout);
-        //myButton=(Button)findViewById(R.id.button);
     }
 
-    private View.OnClickListener event= new View.OnClickListener(){
+    private View.OnClickListener event= new View.OnClickListener() {
         @Override
-        public void onClick(View view){
-                if(view==myButton){
-                    Intent intent= new Intent(MainActivity.this, Activity2.class);
-                    startActivity(intent);
-                    finish();
-
-                }
+        public void onClick(View v) {
+            finish();
         }
     };
 
+    @Override
+    public void onClick(View v) {
+        finish();
+    }
 }
