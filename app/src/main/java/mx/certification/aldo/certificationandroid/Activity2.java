@@ -13,11 +13,8 @@ import android.widget.Button;
 public class Activity2 extends AppCompatActivity {
 
     private Button button1;
-
     private Button button2;
-
     private Button button3;
-
     private Button button4;
 
     @Override
@@ -38,7 +35,6 @@ public class Activity2 extends AppCompatActivity {
         button2.setOnClickListener(buttonEvent);
         button3.setOnClickListener(buttonEvent);
         button4.setOnClickListener(buttonEvent);
-
     }
 
     private View.OnClickListener buttonEvent= new View.OnClickListener() {
@@ -50,8 +46,10 @@ public class Activity2 extends AppCompatActivity {
                 finish();
             }else if(v==button2){
                 Intent intent= new Intent(Activity2.this,MainActivity.class);
+
                 intent.putExtra("hello","I am a hello");
                 intent.putExtra("number",1);
+
                 startActivity(intent);
             }else if(v==button3){
                 Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://google.com.mx"));
