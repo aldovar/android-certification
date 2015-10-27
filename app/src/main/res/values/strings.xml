@@ -9,4 +9,7 @@
     <string name="pass_text">Pass:</string>
     <string name="color_text">Select:</string>
     <string name="button_text">Click here!</string>
+    <string name="title_activity_activity__tab">Activity_Tab</string>
+    <string name="title_activity_simple_list">SimpleListActivity</string>
+    <string name="title_activity_customized_list">CustomizedListActivity</string>
 </resources>
