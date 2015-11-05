@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/normal_button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/element_margin"
+        android:text="@string/normal_button"/>
+
+    <ImageButton
+        android:id="@+id/normal_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@+id/normal_button_text"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:id="@+id/patch_button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/element_margin"
+        android:text="@string/patch_text"
+        android:layout_below="@+id/normal_button"/>
+
+    <ImageButton
+        android:id="@+id/patch_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patch_button_text"
+        android:background="@drawable/button_background"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+
+
+    <TextView
+        android:text="@string/hello_world"
+        android:id="@+id/text_style"
+        android:layout_below="@+id/patch_button"
+        style="@style/TextViewStyle"/>
+
+</RelativeLayout>

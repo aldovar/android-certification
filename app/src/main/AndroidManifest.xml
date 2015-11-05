@@ -9,27 +9,18 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name=".ActivityTab"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
         <uses-library
             android:name="com.google.android.wearable"
             android:required="false" />
 
         <activity
-            android:name=".list.SimpleListActivity"
-            android:label="@string/title_activity_simple_list" >
-        </activity>
-        <activity
-            android:name=".list.CustomizedListActivity"
-            android:label="@string/title_activity_customized_list" >
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/ActivityStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
         </activity>
     </application>
 

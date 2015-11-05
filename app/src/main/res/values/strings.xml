@@ -1,15 +1,8 @@
 <resources>
     <string name="app_name">CertificationAndroid</string>
-
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">I am a Colorful Text!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_second_activitya">SecondActivitya</string>
-    <string name="title_activity_2">Activity2</string>
-    <string name="user_text">User:</string>
-    <string name="pass_text">Pass:</string>
-    <string name="color_text">Select:</string>
-    <string name="button_text">Click here!</string>
-    <string name="title_activity_activity__tab">Activity_Tab</string>
-    <string name="title_activity_simple_list">SimpleListActivity</string>
-    <string name="title_activity_customized_list">CustomizedListActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="normal_button">Normal Button</string>
+    <string name="patch_text">9Patch Button</string>
 </resources>
